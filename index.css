@@ -1,0 +1,168 @@
+:root{
+  --bg:#0f172a;
+  --text:#e5e7eb;
+  --accent:#38bdf8;
+  --card:#111827;
+}
+
+body.light{
+  --bg:#f8fafc;
+  --text:#0f172a;
+  --card:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+}
+
+.navbar ul li a{
+  color:var(--text);
+  text-decoration:none;
+  margin:0 15px;
+}
+
+.navbar ul li a:hover{
+  color:var(--accent);
+}
+
+.mode-btn{
+  border:1px solid var(--accent);
+  background:none;
+  color:var(--accent);
+  padding:6px 10px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero span{
+  color:var(--accent);
+}
+
+.btn{
+  margin-top:20px;
+  padding:10px 20px;
+  background:var(--accent);
+  color:#000;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+/* SECTIONS */
+.section{
+  padding:140px 60px;
+  text-align:center;
+}
+
+.dark{
+  background:#020617;
+}
+
+/* SKILLS */
+.skill{
+    color:whitesmoke;
+  max-width:400px;
+  margin:25px auto;
+  text-align:left;
+}
+
+.bar{
+  background:#1e293b;
+  height:12px;
+  border-radius:10px;
+  margin-top:6px;
+}
+
+.progress{
+  height:12px;
+  background:linear-gradient(90deg,#38bdf8,#0ea5e9);
+  border-radius:10px;
+  animation:load 1.5s ease;
+}
+
+.html{width:90%;}
+.css{width:80%;}
+.js{width:70%;}
+
+@keyframes load{
+  from{width:0;}
+}
+
+/* PROJECTS */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* FORM */
+form{
+  max-width:400px;
+  margin:auto;
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:5px;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}

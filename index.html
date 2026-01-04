@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | YCSAS Intern</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Portfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mode-btn" onclick="toggleMode()">🌙</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>I'm <span>PRATHAMA MANDAL</span></h1>
+  <p>Web Developer | YCSAS Intern</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate learner and Web Development Intern at YCSAS.
+    I joined this internship to gain real-world experience and improve my skills.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <span>HTML</span>
+    <div class="bar">
+      <div class="progress html"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>CSS</span>
+    <div class="bar">
+      <div class="progress css"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="bar">
+      <div class="progress js"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="card">Portfolio Website</div>
+    <div class="card">JavaScript Mini Project</div>
+    <div class="card">Internship Task</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <h2>Contact Me</h2>
+  <form onsubmit="return validateForm()">
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 | YCSAS Internship Portfolio</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
